@@ -1,4 +1,4 @@
-FROM isdockreg101.innovate.ibm.com/jenkins/rubyhelloworld
+FROM isdockreg101.innovate.ibm.com/jenkins/rubyhello
 RUN yum install -y ruby 
 RUN yum install -y rubygems
 RUN yum install -y git
