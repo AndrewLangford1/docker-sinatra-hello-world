@@ -1,5 +1,7 @@
 FROM isdockreg101.innovate.ibm.com/ciohcld/redhat
-RUN apt-get install -y ruby rubygems git
+RUN yum install ruby 
+RUN yum install rubygems
+RUN yum install git
 RUN git clone https://github.com/AndrewLangford1/docker-ruby-hello-world.git  /opt/sinatra/
 RUN gem install bundler
 EXPOSE 5000
