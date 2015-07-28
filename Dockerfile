@@ -6,4 +6,4 @@ RUN git clone https://github.com/AndrewLangford1/docker-ruby-hello-world.git  /o
 RUN gem install bundler
 EXPOSE 5000
 RUN cd /opt/sinatra && git pull && bundle install
-CMD ["/usr/local/bin/foreman","start","-d","/opt/sinatra"]
+RUN ruby server.rb
