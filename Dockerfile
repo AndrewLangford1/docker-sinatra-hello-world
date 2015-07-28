@@ -8,4 +8,6 @@ RUN gem install bundler
 EXPOSE 5000
 RUN cd /opt/sinatra && git pull && bundle install
 RUN cd /opt/sinatra/docker-ruby-hello-world
+RUN echo | pwd
+RUN echo | ls
 RUN ruby server.rb
